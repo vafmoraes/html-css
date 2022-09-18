@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabela</title>
+
+    <style>
+        Body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border:  1px solid black;
+            padding:  8px;
+        }
+        tr.destaque {
+            background-color: greenyellow;
+        }
+
+        col.cnome {
+            background-color: greenyellow;
+        }
+
+        col.cgrupo {
+            background-color: blue;
+        }
+        col.vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="vermelho">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Vanessa</td>
+            <td>F</td>
+            <td>49</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr class="destaque">
+            <td >Ivan</td>
+            <td>M</td>
+            <td>46</td>
+            <td>Ed Fisico</td>
+        </tr>
+        <tr>
+            <td>Heloisa</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Eduarda</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Lucca</td>
+            <td>M</td>
+            <td>14</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>
